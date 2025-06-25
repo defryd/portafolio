@@ -1,11 +1,10 @@
-import catsImage from '../assets/cats.png';
-import cat01 from '../assets/catsProject/cats-01.png';
-import cat02 from '../assets/catsProject/cats-02.png';
-import cat03 from '../assets/catsProject/cats-03.png';
-import cat04 from '../assets/catsProject/cats-04.png';
-import cat05 from '../assets/catsProject/cats-05.png';
+import cat01 from '../assets/catsProject/cats-01.webp';
+import cat02 from '../assets/catsProject/cats-02.webp';
+import cat03 from '../assets/catsProject/cats-03.webp';
+import cat04 from '../assets/catsProject/cats-04.webp';
+import cat05 from '../assets/catsProject/cats-05.webp';
 
-import Perfil from '../assets/MyPhoto.jpeg';
+import Perfil from '../assets/MyPhoto.webp';
 
 const MyPhoto = Perfil;
 
@@ -18,7 +17,7 @@ const projects = [
         tech: "Proyecto de React Native con CLI para visualizar razas de gatos aleatorios.",
         description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando su información correspondiente. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
         link: "https://github.com/defryd/catsApp.git",
-        img: catsImage,
+        img: cat01,
         imgs:[cat01, cat02, cat03, cat04, cat05],
     },
     // { title: "Project 2", tech: "Description of project 2", link: "#" },
