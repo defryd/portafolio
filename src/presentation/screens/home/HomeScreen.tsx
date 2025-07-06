@@ -3,14 +3,15 @@ import data from "../../../data/data";
 import { Typewriter } from "react-simple-typewriter"
 import { Navbar } from "../../components/Navbar";
 import { Title } from "../../components/ui/Title";
+import { InfoSection } from "../../components/InfoSection";
 
 export const HomeScreen = () => {
 
-    const { techStack, 
-        // experience, 
-        // projects, 
-        // education, 
-        // certifications, 
+    const { techStack,
+        experience,
+        projects, 
+        education, 
+        certifications, 
         Ids, MyPhoto } = data;
 
     return (
@@ -43,7 +44,7 @@ export const HomeScreen = () => {
                             <span className="border-r-4 ml-1 animate-pulse border-[var(--color-accent)]">&nbsp;</span>
                         </h1>
                     </div>
-                    <p className="text-center mx-auto text-lg text-[var(--color-text)] transition-colors duration-500">
+                    <p className="text-center mx-auto text-lg text-[var(--color-primary)] transition-colors duration-500">
                         Soy un desarrollador comprometido en la creación de aplicaciones funcionales y visualmente atractivas.
                     </p>
                 </header>
@@ -73,13 +74,39 @@ export const HomeScreen = () => {
                     </div>
                 </section>
 
+                <InfoSection
+                    id='experience'
+                    title='Experience'
+                    items={experience}
+                />
+
+                <InfoSection
+                    id='projects'
+                    title='Projects'
+                    items={projects}
+                />
+
+                <InfoSection
+                    id='education'
+                    title='Education'
+                    items={education}
+                />
+
+                <InfoSection
+                    id='certifications'
+                    title='Certifications'
+                    items={certifications}
+                />
+
+                
+
                 <footer className='text-center py-8 
                 bg-gradient-to-b 
                 from-[var(--color-background)] to-[var(--color-muted)]
                 rounded-xl 
                 shadow-xl'>
                     <p className='text-center 
-                    text--[var(--color-text)] 
+                    text-[var(--color-primary)] 
                     transition-colors duration-500'>
                         © 2025 Freddy. All rights reserved.
                     </p>
