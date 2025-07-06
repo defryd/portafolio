@@ -8,10 +8,13 @@
   --color-accent: #2563EB;
   --color-tertiary: #9333EA;
   --color-soft: #DDD6FE;
+  --color-cards: #bac6f7;
   --color-muted: #b9abf8;
   --color-background: #FEFEFE;
   --color-mix: #00BFFF;
   --color-text: #1F2937;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #626976;
 }
 
 .dark {
@@ -20,10 +23,13 @@
   --color-accent: #00CC33;
   --color-tertiary: #00f665;
   --color-soft: #003B5C;
+  --color-cards: #003B5C;
   --color-muted: #003B00;
   --color-background: #000000;
   --color-mix: #00BFFF;
-  --color-text: #00FF41;
+  --color-text: #E5E7EB;
+  --color-text-secondary: #D1D5DB;
+  --color-text-muted: #9CA3AF;
 }
 
 :root {
