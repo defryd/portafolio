@@ -15,7 +15,7 @@ export const Card = ({ item, sectionId }: CardProps) => {
             const { name, institution, date, url } = item as Certification;
 
             return (
-                <div className='bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md transition duration-300'>
+                <div className='bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md'>
                     <p className='text-[var(--color-primary)] font-semibold mb-1'>
                         {name}
                     </p>
@@ -40,7 +40,7 @@ export const Card = ({ item, sectionId }: CardProps) => {
                     tabIndex={0}
                     onClick={() => navigate(`/projects/${id}`)}
                     onKeyDown={(e) => e.key === 'Enter' && navigate(`/projects/${id}`)}
-                    className="bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md hover:scale-[1.01] transition duration-300 cursor-pointer focus:outline-none focus:ring-5 focus:bg-[var(--color-mix)]"
+                    className="bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md hover:scale-[1.01] cursor-pointer focus:outline-none focus:ring-5 focus:bg-[var(--color-mix)]"
                 >
                     <h3 className="text-[var(--color-primary)] text-lg font-semibold mb-1">{title}</h3>
                     {img && <img src={img} alt={title} className="w-full h-32 object-cover rounded-md mb-2" />}
@@ -52,7 +52,7 @@ export const Card = ({ item, sectionId }: CardProps) => {
         case 'experience': {
             const { company, role, duration, description } = item as Experience;
             return (
-                <div className="bg-[var(--color-soft)] p-3 rounded-md shadow-sm text-sm hover:shadow-md transition-colors duration-500">
+                <div className="bg-[var(--color-soft)] p-3 rounded-md shadow-sm text-sm hover:shadow-md">
                     {company && <h3 className="text-[var(--color-primary)] text-lg font-semibold mb-1">{company}</h3>}
                     {role && <p className="text-[var(--color-text)] mb-0.5 font-semibold">{role}</p>}
                     {description && <p className="text-[var(--color-text-muted)] mb-1">{description}</p>}
@@ -64,7 +64,7 @@ export const Card = ({ item, sectionId }: CardProps) => {
         case 'education': {
             const { institution, degree, duration } = item as Education;
             return (
-                <div className="bg-[var(--color-soft)] p-3 rounded-md shadow-sm text-sm hover:shadow-md transition duration-300">
+                <div className="bg-[var(--color-soft)] p-3 rounded-md shadow-sm text-sm hover:shadow-md">
                     {institution && <h3 className="text-[var(--color-primary)] text-lg font-semibold mb-1">{institution}</h3>}
                     {degree && <p className="text-[var(--color-text)] mb-0.5 font-semibold">{degree}</p>}
                     {duration && <p className="text-[var(--color-text-muted)] mb-0.5">{duration}</p>}

@@ -55,7 +55,7 @@ export const HomeScreen = () => {
                     </Title>
                     <div className='flex flex-col md:flex-2 items-center gap-2 px-4'>
                         <img src={MyPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg mb-5' />
-                        <p className="text-lg text-center max-w-7xl transition-colors duration-500">
+                        <p className="text-[var(--color-text)] text-lg text-center max-w-7xl">
                             Soy desarrollador Full Stack con una gran pasión por crear aplicaciones web dinámicas, atractivas y funcionales. Me gusta trabajar tanto en el Front-end como en el Back-end, y disfruto aprendiendo nuevas tecnologías que me permitan seguir mejorando día a día.
                         </p>
                     </div>
