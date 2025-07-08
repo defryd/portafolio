@@ -14,7 +14,7 @@ const projects = [
     {
         id: "cats-app",
         title: "Cats App",
-        tech: "Proyecto de React Native con CLI para visualizar razas de gatos aleatorios.",
+        tech: "Proyecto de React Native con CLI para visualizar razas de gatos.",
         description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando su información correspondiente. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
         link: "https://github.com/defryd/catsApp.git",
         img: cat01,
