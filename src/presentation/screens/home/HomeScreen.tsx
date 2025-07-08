@@ -4,6 +4,7 @@ import { Typewriter } from "react-simple-typewriter"
 import { Navbar } from "../../components/Navbar";
 import { Title } from "../../components/ui/Title";
 import { InfoSection } from "../../components/InfoSection";
+import { FormSection } from "../../components/FormSection";
 
 export const HomeScreen = () => {
 
@@ -97,6 +98,8 @@ export const HomeScreen = () => {
                     title='Certifications'
                     items={certifications}
                 />
+
+                <FormSection></FormSection>
 
                 
 

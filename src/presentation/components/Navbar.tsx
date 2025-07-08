@@ -33,7 +33,7 @@ export const Navbar = ({ sections }: NavbarProps) => {
                                 href={`#${id}`}
                                 className="text-[var(--color-primary)] capitalize font-bold
                                 transition-colors duration-500
-                                hover:text-red-600"
+                                hover:text-[var(--color-mix)]"
                             >
                                 {id}
                             </a>
