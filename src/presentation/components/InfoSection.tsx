@@ -23,7 +23,6 @@ export const InfoSection = ({ id, title, items }: InfoSectionProps) => {
     
     const visibleItems = showAll ? items : items.slice(0, 6);
     const hasMore = items.length > 6;
-    console.log(`Visible items: ${visibleItems.length}, Total items: ${items.length}`);
 
     return (
         <section id={id} className="scroll-mt-8 pt-6">
