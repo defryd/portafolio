@@ -4,9 +4,11 @@ import cat03 from '../assets/catsProject/cats-03.webp';
 import cat04 from '../assets/catsProject/cats-04.webp';
 import cat05 from '../assets/catsProject/cats-05.webp';
 
-import Perfil from '../assets/MyPhoto.webp';
+import  darkPerfil  from '../assets/me_dark.webp';
+import LightPerfil from '../assets/me_light.webp';
 
-const MyPhoto = Perfil;
+const darkPhoto = darkPerfil;
+const lightPhoto = LightPerfil;
 
 const Ids = [ 'about', 'skills','experience', 'projects', 'education', 'certifications', 'contact' ];
 
@@ -91,5 +93,6 @@ export default {
     experience,
     education,
     certifications,
-    MyPhoto
+    darkPhoto,
+    lightPhoto,
 }

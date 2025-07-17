@@ -5,15 +5,18 @@ import { Navbar } from "../../components/Navbar";
 import { Title } from "../../components/ui/Title";
 import { InfoSection } from "../../components/InfoSection";
 import { FormSection } from "../../components/FormSection";
+import { useTheme } from "../../context/ThemeContext";
 
 export const HomeScreen = () => {
+
+    const { isDark } = useTheme();
 
     const { techStack,
         experience,
         projects, 
         education, 
         certifications, 
-        Ids, MyPhoto } = data;
+        Ids, darkPhoto, lightPhoto } = data;
 
     return (
         <main>
@@ -22,7 +25,6 @@ export const HomeScreen = () => {
                 <Navbar sections={Ids} />
 
                 <header className="text-center py-15 mt-6 px-4 rounded-xl 
-                shadow-lg
                 bg-gradient-to-b
                 from-[var(--color-muted)] to-[var(--color-background)]
                 bg-[var(--color-soft)] "
@@ -55,7 +57,7 @@ export const HomeScreen = () => {
                         About Me
                     </Title>
                     <div className='flex flex-col md:flex-2 items-center gap-2 px-4'>
-                        <img src={MyPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg mb-5' />
+                        <img src={isDark ? darkPhoto : lightPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg mb-5' />
                         <p className="text-[var(--color-text)] text-lg text-center max-w-7xl">
                             Soy desarrollador Full Stack con una gran pasión por crear aplicaciones web dinámicas, atractivas y funcionales. Me gusta trabajar tanto en el Front-end como en el Back-end, y disfruto aprendiendo nuevas tecnologías que me permitan seguir mejorando día a día.
                         </p>
