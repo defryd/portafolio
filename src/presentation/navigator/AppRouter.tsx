@@ -5,7 +5,7 @@ import { Layout } from "../layouts/Layout"
 
 export const AppRouter = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portafolio">
             <Layout>
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
