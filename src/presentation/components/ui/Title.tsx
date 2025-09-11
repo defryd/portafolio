@@ -2,9 +2,9 @@
 import clsx from 'clsx';
 import type { ElementType, HTMLAttributes, ReactNode } from 'react';
 
-type HeadingLevel = 'h1' | 'h2' | 'h3';
+type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4';
 
-type Variant = 'h1' | 'h2' | 'h3';
+type Variant = 'h1' | 'h2' | 'h3' | 'h4';
 type Align = 'left' | 'center' | 'right';
 
 interface TextProps extends HTMLAttributes<HTMLElement> {
@@ -19,6 +19,7 @@ const variants: Record<Variant, string> = {
     h1: 'text-4xl font-bold',
     h2: 'text-3xl font-semibold',
     h3: 'text-2xl font-medium',
+    h4: 'text-xl font-medium',
 };
 
 const alignments: Record<Align, string> = {

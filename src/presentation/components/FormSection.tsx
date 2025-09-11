@@ -32,7 +32,7 @@ export const FormSection = () => {
     };
 
     return (
-        <section id="contact" className="pt-6">
+        <section id="contact" className="pt-6 bg-[var(--color-soft)] pb-10 mx-10 px-5 rounded-xl shadow-md">
             <Title as="h2" variant="h2" align="center" className='text-[var(--color-primary)] mb-6 font-semibold transition-colors duration-500'>
 
                 Contact Me
@@ -44,11 +44,14 @@ export const FormSection = () => {
 
 
             <div className="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/freddychiav" className="text-blue-500 font-medium hover:underline">
+                <a href="https://www.linkedin.com/in/freddychiav" className="text-blue-500 font-semibold hover:underline">
                     LinkedIn
                 </a>
-                <a href="https://github.com/defryd" className="text-blue-500 font-medium hover:underline">
+                <a href="https://github.com/defryd" className="text-blue-500 font-semibold hover:underline">
                     GitHub
+                </a>
+                <a href="https://drive.google.com/file/d/1GHEMSHeNa-koyfmhB3bXaDtNIkwBVBSU/view?usp=sharing" className="text-blue-500 font-semibold hover:underline">
+                    Currículum
                 </a>
             </div>
 

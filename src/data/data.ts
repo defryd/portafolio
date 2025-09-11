@@ -10,13 +10,13 @@ import LightPerfil from '../assets/me_light.webp';
 const darkPhoto = darkPerfil;
 const lightPhoto = LightPerfil;
 
-const Ids = [ 'about', 'skills','experience', 'projects', 'education', 'certifications', 'contact' ];
+const idSection = [ 'about', 'skills','experience', 'projects', 'education', 'certifications', 'contact' ];
 
 const projects = [
     {
         id: "cats-app",
         title: "Cats App",
-        tech: "Proyecto de React Native con CLI para visualizar razas de gatos.",
+        tech: "Cats App es un proyecto movil realizado en React Native con CLI que usa la API de TheCatAPI para visualizar y buscar razas de gatos.",
         description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando su información correspondiente. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
         link: "https://github.com/defryd/catsApp.git",
         img: cat01,
@@ -27,32 +27,50 @@ const projects = [
     // { title: "Project 4", tech: "Description of project 4", link: "#" },
 ];
 
-const techStack = [
-        { name: "React", url: "https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" },
-        { name: "React Native", url: "https://img.shields.io/badge/-React Native-319ff0?style=flat-square&logo=react&logoColor=white" },
-        { name: "Redux", url: "https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" },
-        { name: "Zustand", url: "https://img.shields.io/badge/-Zustand-752714?style=flat-square" },
-        { name: "NPM", url: "https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" },
-        { name: "Tailwind CSS", url: "https://img.shields.io/badge/-TailwindCSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" },
-        { name: "GitHub Actions", url: "https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" },
-        { name: "Git", url: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" },
-        { name: "Gitflow", url: "https://img.shields.io/badge/-Gitflow-F05032?style=flat-square&logo=git&logoColor=white" },
-        { name: "HTML5", url: "https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" },
-        { name: "CSS", url: "https://img.shields.io/badge/-CSS-663399?style=flat-square&logo=css&logoColor=white" },
-        { name: "Bootstrap", url: "https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" },
+const techStack = {
+    frontend: {
+        frameworks: [
+            { name: "React", url: "https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" },
+            { name: "React Native", url: "https://img.shields.io/badge/-React Native-319ff0?style=flat-square&logo=react&logoColor=white" },
+        ],
+        state: [
+            { name: "Redux", url: "https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" },
+            { name: "Zustand", url: "https://img.shields.io/badge/-Zustand-752714?style=flat-square" },
+        ],
+        style: [
+            { name: "Tailwind CSS", url: "https://img.shields.io/badge/-TailwindCSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" },
+            { name: "HTML5", url: "https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" },
+            { name: "CSS", url: "https://img.shields.io/badge/-CSS-663399?style=flat-square&logo=css&logoColor=white" },
+            { name: "Bootstrap", url: "https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" },
+        ],
+    },
+    lenguajes:[
         { name: "JavaScript", url: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" },
         { name: "TypeScript", url: "https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" },
         { name: "Go", url: "https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white" },
         { name: "PHP", url: "https://img.shields.io/badge/-php-777BB4?style=flat-square&logo=php&logoColor=white" },
         { name: "Java", url: "https://img.shields.io/badge/-Java-e91d1d?style=flat-square" },
+    ],
+    backend: [
         { name: "Node.js", url: "https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" },
+    ],
+    databases: [
         { name: "MongoDB", url: "https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" },
         { name: "SQLite", url: "https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" },
         { name: "MySQL", url: "https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" },
-    ];
+    ],
+    tools: [
+        { name: "NPM", url: "https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" },
+        { name: "GitHub Actions", url: "https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" },
+        { name: "Git", url: "https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" },
+        { name: "Gitflow", url: "https://img.shields.io/badge/-Gitflow-F05032?style=flat-square&logo=git&logoColor=white" },
+    ],
+};
+
+
 
 const experience = [
-    { company: "WIEDII US", role: "Full Stack Developer", duration: "feb. 2024 - actualidad · 1 año 5 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
+    { company: "WIEDII US", role: "Full Stack Developer", duration: "feb. 2024 - actualidad · 1 año 8 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
     { company: "Autónomo", role: "Freelance Programmer", duration: "feb. 2022 - ene. 2024 · 2 años", description: "Mientras finalizaba la carrera de Ingeniería de Sistemas, trabajé como desarrollador freelance, colaborando en proyectos para clientes locales. Me enfoqué principalmente en el desarrollo frontend con React, realizando correcciones y desarrollando funcionalidades básicas en aplicaciones web." },
     { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Front-end Developer", duration: "nov. 2021 - ene. 2022 · 3 meses", description: "Participé en el desarrollo del módulo de gestión de procesos para atención al cliente dentro de una aplicación web, enfocándome en el frontend con HTML, CSS y JavaScript. También realicé la integración del módulo en una plataforma basada en WordPress, asegurando compatibilidad y diseño responsivo." },
 ];
@@ -87,7 +105,7 @@ const certifications = [
 ];
 
 export default {
-    Ids,
+    idSection,
     projects,
     techStack,
     experience,

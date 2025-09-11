@@ -15,9 +15,11 @@ export const InfoSection = ({ id, title, items }: InfoSectionProps) => {
     const getGridClass = () => {
         switch (id) {
             case 'education':
-                return 'grid grid-cols-1 md:grid-cols-2 gap-4';
+                return 'mx-10 grid grid-cols-1 md:grid-cols-2 gap-4';
+            case 'experience':
+                return 'mx-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4';
             default:
-                return 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
+                return 'mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
         }
     };
     
