@@ -50,7 +50,7 @@ export const FormSection = () => {
                 <a href="https://github.com/defryd" className="text-blue-500 font-semibold hover:underline">
                     GitHub
                 </a>
-                <a href="https://drive.google.com/file/d/1GHEMSHeNa-koyfmhB3bXaDtNIkwBVBSU/view?usp=sharing" className="text-blue-500 font-semibold hover:underline">
+                <a href="https://drive.google.com/file/d/1rukl00q_s5V4A9kMPgVZzjr5WevAr_2G/view?usp=sharing" className="text-blue-500 font-semibold hover:underline">
                     Currículum
                 </a>
             </div>
