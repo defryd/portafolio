@@ -44,13 +44,13 @@ export const FormSection = () => {
 
 
             <div className="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/freddychiav" className="text-blue-500 font-semibold hover:underline">
+                <a href="https://www.linkedin.com/in/freddychiav" className="text-[var(--color-secondary)] font-semibold hover:underline">
                     LinkedIn
                 </a>
-                <a href="https://github.com/defryd" className="text-blue-500 font-semibold hover:underline">
+                <a href="https://github.com/defryd" className="text-[var(--color-secondary)] font-semibold hover:underline">
                     GitHub
                 </a>
-                <a href="https://drive.google.com/file/d/1rukl00q_s5V4A9kMPgVZzjr5WevAr_2G/view?usp=sharing" className="text-blue-500 font-semibold hover:underline">
+                <a href="https://drive.google.com/file/d/1Zsvs9vutxvp9C-oxlEQH5k3kiKPyuIrj/view?usp=sharing" className="text-[var(--color-secondary)] font-semibold hover:underline">
                     Currículum
                 </a>
             </div>

@@ -63,7 +63,7 @@ export const HomeScreen = () => {
                     <div className='flex flex-col md:flex-2 items-center gap-2 px-4'>
                         <img src={isDark ? darkPhoto : lightPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg mb-5' />
                         <p className="text-[var(--color-text)] text-lg text-center max-w-7xl">
-                            Soy Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones móviles y web, especializado en React Native y la integración de servicios en tiempo real mediante APIs REST y WebSockets. Me apasiona crear soluciones escalables y de alto rendimiento, aplicando buenas prácticas de código, optimización de performance y colaboración en equipos multidisciplinarios.
+                            Soy ingeniero de sistemas y Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones móviles y web, especializado en React Native y la integración de servicios en tiempo real mediante APIs REST y WebSockets. He trabajado con tecnologías como React, Go, PHP y Node.js, desarrollando arquitecturas modulares y sistemas escalables basados en microservicios. Me enfoco en crear soluciones eficientes y de alto rendimiento, aplicando buenas prácticas de código, optimización de performance y colaboración en equipos multidisciplinarios.
                         </p>
                     </div>
                 </section>
@@ -145,24 +145,28 @@ export const HomeScreen = () => {
                     id='experience'
                     title='Experience'
                     items={experience}
+                    type="list"
                 />
 
                 <InfoSection
                     id='projects'
                     title='Projects'
                     items={projects}
+                    type="card"
                 />
 
                 <InfoSection
                     id='education'
                     title='Education'
                     items={education}
+                    type="card"
                 />
 
                 <InfoSection
                     id='certifications'
                     title='Certifications'
                     items={certifications}
+                    type="list"
                 />
 
                 <FormSection></FormSection>

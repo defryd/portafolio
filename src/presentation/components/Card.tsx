@@ -10,26 +10,26 @@ export const Card = ({ item, sectionId }: CardProps) => {
     // const navigate = useNavigate();
 
     switch (sectionId) {
-        case 'certifications': {
-            const { name, institution, date, url } = item as Certification;
+        // case 'certifications': {
+        //     const { name, institution, date, url } = item as Certification;
 
-            return (
-                <div className='bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md'>
-                    <p className='text-[var(--color-primary)] font-semibold mb-1'>
-                        {name}
-                    </p>
-                    <div className='flex flex-wrap justify-between gap-2'>
-                        {institution && <p className='text-[var(--color-text)] font-semibold'>{institution}</p>}
-                        {date && <p className='text-[var(--color-text-muted)] font-semibold'>{date}</p>}
-                        {url && (
-                            <a href={url} className='text-blue-500 hover:underline'>
-                                View
-                            </a>
-                        )}
-                    </div>
-                </div>
-            );
-        }
+        //     return (
+        //         <div className='bg-[var(--color-soft)] p-4 rounded-md shadow-sm text-sm hover:shadow-md'>
+        //             <p className='text-[var(--color-primary)] font-semibold mb-1'>
+        //                 {name}
+        //             </p>
+        //             <div className='flex flex-wrap justify-between gap-2'>
+        //                 {institution && <p className='text-[var(--color-text)] font-semibold'>{institution}</p>}
+        //                 {date && <p className='text-[var(--color-text-muted)] font-semibold'>{date}</p>}
+        //                 {url && (
+        //                     <a href={url} className='text-blue-500 hover:underline'>
+        //                         View
+        //                     </a>
+        //                 )}
+        //             </div>
+        //         </div>
+        //     );
+        // }
 
         case 'projects': {
             const { title, tech, img, link } = item as Project;
@@ -46,7 +46,7 @@ export const Card = ({ item, sectionId }: CardProps) => {
                     {img && <img src={img} alt={title} className="w-full h-32 object-cover rounded-md mb-2" />}
                     {tech && <p className="text-[var(--color-text)] mb-0.5">{tech}</p>}
                     {link && (
-                        <a href={link} className='text-blue-500 hover:underline font-semibold'>
+                        <a href={link} className='text-[var(--color-accent)] hover:underline font-semibold'>
                             View Project in GitHub
                         </a>
                     )}
